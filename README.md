@@ -1,7 +1,25 @@
 # playground-cloud
 
-Based on following repository for simple testing of argo CD :
+Based on following repositories for simple testing of Argo CD :
 https://github.com/paulbouwer/hello-kubernetes
+https://github.com/argoproj/argo-cd
+
+## Argo CD setup (with Kubernetes on windows)
+Source/Instructions:
+https://argo-cd.readthedocs.io/en/stable/getting_started/
+
+### Installation of Argo CD:
+```
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
+
+### Access to argo CD via portforwarding: (Load Balancing is not available on local kubernetes)
+```
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+```
+
+
 
 
 custom messages can be changed in the values.yaml file
