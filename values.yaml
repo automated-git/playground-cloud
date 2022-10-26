@@ -1,5 +1,5 @@
 # Provide a custom message
-message: "Yay I rule it!!!"
+message: "automated.ch changed the message! Argo CD Rocks"
 
 # Remember to set service.type=ClusterIP if you are using an ingress
 ingress:
