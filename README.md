@@ -2,6 +2,7 @@
 
 Based on following repositories for simple testing of Argo CD :
 https://github.com/paulbouwer/hello-kubernetes
+
 https://github.com/argoproj/argo-cd
 
 ## Argo CD setup (with Kubernetes on windows)
